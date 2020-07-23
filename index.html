@@ -1,106 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&family=Lato&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
         <title>THE CODE REVIEW</title>
     </head>
 
     <body>
+        <div id="container">
         <header>
-            <h1>THE CODE REVIEW</h1>
+            <h1 class="intro">THE CODE REVIEW</h1>
         </header>
 
-        <div>
-            <H2>Signup for our newsletter</H2>
-            <p>Get the lates news on how your code is doing right in your inbox</p>
-        </div>
-
-        <main>
-            <!--==== basic information "section-1" ====-->
-        <div>
-
-            <form method="post" action="index.html">
-                <fieldset>
-                <legend class="contact-info">Contact Information</legend>
-
             <div>
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="user-name" required="required" placeholder="required">
+                <H2>Signup for our newsletter</H2>
+                <p class="intro-p">Get the lates news on how your code is doing right in your inbox</p>
+               
+                <hr class="line-1">
+                <hr class="line-2">
             </div>
 
-            <div>
-                <label for="email-address">Email Adress</label>
-                <input type="address" id="email-address" name="user-address" required="required" placeholder="required">
-            </div>
-
-            <div>
-                <label for="phone-number">Phone Number</label>
-                <input type="phone" id="phone-number" name="number">
-            </div>
-
-            <div>
-                <label for="street-address">Street Address</label>
-                <input type="street" id="street-address" name="address">
-            </div>
-
-            <div>
-                <label for="city">City</label>
-                <input type="place" id="city" name="user-city">
-            </div>
-
-            <div>       
-                <label for="state">State</label>
-                <select id="state" name="user-state">
-                    <option>Choose State</option>    
-                    <option value="az">Arizona</option>
-                    <option value="va">Virginia</option>
-                    <option value="fl">Florida</option>
-                    <option value="ks">Kansas</option>
-                    <option value="co">Colorado</option>
-                    <option value="ca">California</option>
-                    <option value="oh">Ohio</option>
-                    <option value="tx">Texas</option>
-                 </div>
-
-                 <div>
-                    <label for="zip-code">Zip Code</label>
-                    <input type="zip" id="zip-code" name="user-zipcode">
-                    </div>
-                    
-                </div>
+            <main>
+                <!--==== basic information "section-1" ====-->
             
-                </fieldset>
-        
-        
-        <!--==== newsletter "section-2" ====-->
-        <fieldset>
-            <div>
-            <legend class="news">Newsletter</legend>
-            <p>Select the newsletters you would like to recieve</p>
+            
+                <form method="post" action="index.html">
+                    <fieldset>
+                       
+                    <legend><span class="contact-info"><strong>Contact Information</strong></span></legend>
+                    
+                <div class="contact-form">
+                    <label for="name">Full Name</label>
+                    <input required type="text" id="name" name="user-name" placeholder="required">
+                </div>
+                
+                <div class="contact-form">
+                    <label for="email-address">Email Adress</label>
+                    <input required type="email" id="email-address" name="user-address" placeholder="required">
+                </div>
 
-            <input type="checkbox" name="newsletter" id="html-news"><label for="html-news">HTML News</label><br>
-            <input type="checkbox" name="newsletter" id="css-news"><label for="css-news">CSS News</label><br>
-            <input type="checkbox" name="newsletter" id="javascript-news"><label for="javascript-news">Javascript News</label>
-            <p>Newsletter format</p>
-            <input type="radio" name="newsletter-format" id="html"><label for="html">HTML</label><br>
-            <input type="radio" name="newsletter-format" id="plain-text"><label for="plain-text">Plain text</label>
+                <div class="contact-form">
+                    <label for="phone-number">Phone Number</label>
+                    <input type="text" id="phone-number" name="number">
+                </div>
 
-            <p>Other topics you'd like to hear about</p>
-            <label>
-                <textarea id="topics" name="user-topics"></textarea>
-            </label>
-        </fieldset>
+                <div class="contact-form">
+                    <label for="street-address">Street Address</label>
+                    <input type="text" id="street-address" name="address">
+                </div>
 
-        <button type="submit" class="button">Sign Up</button>
-        </div>
+                <div class="contact-form">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="user-city">
+                </div>
 
-            </form>
+                 <div class="contact-form">    
+                    <label for="state">State</label>
+                    <select id="state" name="user-state">
+                      <option value="">Choose State</option>    
+                        <option value="az">Arizona</option>
+                        <option value="va">Virginia</option>
+                        <option value="fl">Florida</option>
+                        <option value="ks">Kansas</option>
+                        <option value="co">Colorado</option>
+                        <option value="ca">California</option>
+                        <option value="oh">Ohio</option>
+                        <option value="tx">Texas</option>
+                    </select>
+                </div>
+                  
+                <div class="contact-form">
+                        <label for="zip">Zip Code</label>
+                        <input type="text" id="zip" name="user-zip-code">
+                       
+                </div>
+                <hr class="line-3">
+                    </fieldset>
+               
+                   
+            
+            <!--==== newsletter "section-2" ====-->
+            
+            <fieldset>
+                
+                <legend><strong>Newsletter</strong></legend>
+                <p class="news">Select the newsletters you would like to recieve</p>
+           
+                <input type="checkbox" name="newsletter" id="html-news"><label for="html-news">HTML News</label><br>
+                <input type="checkbox" name="newsletter" id="css-news"><label for="css-news">CSS News</label><br>
+                <input type="checkbox" name="newsletter" id="javascript-news"><label for="javascript-news">Javascript News</label>
+                <p>Newsletter format</p>
+                <input type="radio" name="newsletter-format" id="html"><label for="html">HTML</label><br>
+                <input type="radio" name="newsletter-format" id="plain-text"><label for="plain-text">Plain text</label>
+
+                <p>Other topics you'd like to hear about</p>
+                <label>
+                    <textarea id="topics" name="user-topics"></textarea>
+                </label>
+           
+            </fieldset>
+
+            <button type="submit" class="button">Sign Up</button>
+            
+
+                </form>
         </main>
 
         <footer><em>Copyright The Code Review</em></footer>
-        
+    </div>
     </body>
 
 </html>
