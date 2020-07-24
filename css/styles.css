@@ -72,7 +72,7 @@ form {
 }
 
 
-.code {
+.contact-form-code {
     width: 45%;
 }
 
@@ -176,17 +176,59 @@ input[type="radio"] {
 /*-------------Media Querry-------------*/
 
 @media (min-width: 768px) {
-    input[type=text],
-    input[type=email],
-    input[type=cellphone],
-    select,
-    textarea {
+
+
+    div[id="container"] {
+        max-width: 80%;
+        margin: auto;
+    }
+
+
+    .contact-form,
+    .contact-form-code {
         display: flex;
         flex-direction: row;
         align-items: center;
-        max-width: 100%;
+       
       }
+
+      
+
+      input[type=text],
+      input[type=email],
+      input[type=cellphone],
+      select,
+      textarea {
+  
+         margin-left: 25px;
+    }
+  
+    
+    label[for=name],
+    label[for=email-address],
+    label[for=phone-number],
+    label[for=street-address],
+    label[for=city],
+    label[for=state] {
+    
+        width: 30%;
+    }
+
+  
+   
+    label[for=zip] {
+        width: 90%;
+    }
+
+    .line-1,
+    .line-2 {
+      width: 80%;
+  }
+
+
 }
+
+
 
 
 
