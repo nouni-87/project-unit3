@@ -76,6 +76,8 @@ form {
     width: 45%;
 }
 
+
+
 footer {
     text-align: center;
     line-height: 2;
@@ -113,6 +115,7 @@ div[id="container"] {
 
 
 input[type=text],
+input[type=tel],
 input[type=email],
 input[type=cellphone],
 select,
@@ -144,6 +147,20 @@ input[type="radio"] {
 }
 
 
+/*-------------CSS Transition for Focus-------------*/
+
+
+
+input:focus,
+textarea:focus,
+select:focus {
+    background-color: lightblue;
+    transition: border 2s, background-color 2s, transform 2s;
+}
+  
+button:focus {
+    background-color: lightblue;
+}
 
 /*-------------Horizontal Rule-------------*/
 
@@ -209,7 +226,7 @@ input[type="radio"] {
         max-width: 25%;
     }
 
-    
+
     .contact-form,
     .contact-form-code {
         display: flex;
