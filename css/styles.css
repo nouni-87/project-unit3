@@ -96,6 +96,11 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.textarea {
+    display: block;
+    margin-top: 20px;
+}
+
 h2,
 .intro-p,
 legend {
@@ -145,6 +150,7 @@ input[type="checkbox"],
 input[type="radio"] {
     margin-right: 10px;
 }
+
 
 
 /*-------------CSS Transition for Focus-------------*/
