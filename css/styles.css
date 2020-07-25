@@ -183,7 +183,33 @@ input[type="radio"] {
         margin: auto;
     }
 
+    form {
+        max-width: 900px;
+    }
 
+    .contact-form label,
+    .contact-form-code label {
+        flex-basis: 25%;
+    }
+
+    .contact-form select,
+    .contact-form input,
+    .contact-form-code input {
+        flex-grow:1;
+        flex-basis:70%;
+    }
+
+
+    .contact-form-code {
+        width: 100%;
+    }
+
+
+    .contact-form-code input {
+        max-width: 25%;
+    }
+
+    
     .contact-form,
     .contact-form-code {
         display: flex;
@@ -194,37 +220,11 @@ input[type="radio"] {
 
       
 
-      input[type=text],
-      input[type=email],
-      input[type=cellphone],
-      select,
-      textarea {
-  
-         margin-left: 25px;
-    }
-  
-    
-    label[for=name],
-    label[for=email-address],
-    label[for=phone-number],
-    label[for=street-address],
-    label[for=city],
-    label[for=state] {
-    
-        width: 30%;
-    }
-
-  
-   
-    label[for=zip] {
-        width: 90%;
-    }
-
+     
     .line-1,
     .line-2 {
       width: 80%;
   }
-
 
 }
 
